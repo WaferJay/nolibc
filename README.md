@@ -10,31 +10,35 @@ nolibc/include/uapi/   -> linux/include/uapi/
 
 ## Usage
 
-Add the following configuration in your CMakeLists.txt:
+Add to your CMakeLists.txt:
 
 ```cmake
 add_subdirectory(nolibc)
 
+add_executable(${CMAKE_PROJECT_NAME} main.c)
 target_link_libraries(${CMAKE_PROJECT_NAME} nolibc_headers)
 ```
 
-Include nolibc.h in your source code:
+Use in your C code:
 
 ```c
+// main.c
+
 #include <nolibc.h>
 
 int main()
 {
     printf("hello, nolibc!\n");
+    return 0;
 }
 ```
 
-## Licensing
+## License
 
 This project contains code derived from the Linux kernel.
 
 Unless otherwise specified, source files are licensed under:
 
-SPDX-License-Identifier: LGPL-2.1 OR MIT
+**SPDX-License-Identifier:** LGPL-2.1 OR MIT
 
-See LICENSES/ for full license texts.
+See [LICENSES/](LICENSES/) for full license texts.
