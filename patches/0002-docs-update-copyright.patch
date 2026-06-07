@@ -1,0 +1,37 @@
+From 64edaa2f4b0d2008acd9c4d4a65a6309168794f4 Mon Sep 17 00:00:00 2001
+From: WaferJay <me@wanfajie.com>
+Date: Sun, 7 Jun 2026 21:29:15 +0800
+Subject: [PATCH] docs: update copyright
+
+---
+ include/nolibc/crt.h   |   1 +
+ include/nolibc/errno.h |   1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/include/nolibc/crt.h b/include/nolibc/crt.h
+index 35976d4..cc84f49 100644
+--- a/include/nolibc/crt.h
++++ b/include/nolibc/crt.h
+@@ -2,6 +2,7 @@
+ /*
+  * C Run Time support for NOLIBC
+  * Copyright (C) 2023 Zhangjin Wu <falcon@tinylab.org>
++ * Copyright (C) 2026 WaferJay
+  */
+ 
+ #ifndef _NOLIBC_CRT_H
+diff --git a/include/nolibc/errno.h b/include/nolibc/errno.h
+index 7a1d4f4..9d80b0e 100644
+--- a/include/nolibc/errno.h
++++ b/include/nolibc/errno.h
+@@ -2,6 +2,7 @@
+ /*
+  * Minimal errno definitions for NOLIBC
+  * Copyright (C) 2017-2022 Willy Tarreau <w@1wt.eu>
++ * Copyright (C) 2026 WaferJay
+  */
+ 
+ /* make sure to include all global symbols */
+-- 
+2.51.0
+
