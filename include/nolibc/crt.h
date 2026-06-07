@@ -9,8 +9,13 @@
 
 #include "compiler.h"
 
+#ifdef NOLIBC_NO_BSS
+char **environ __attribute__((weak,section(".data")));
+const unsigned long *_auxv __attribute__((weak,section(".data")));
+#else
 char **environ __attribute__((weak));
 const unsigned long *_auxv __attribute__((weak));
+#endif
 
 void _start(void);
 static void __stack_chk_init(void);
