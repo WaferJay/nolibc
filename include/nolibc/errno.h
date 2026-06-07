@@ -2,7 +2,6 @@
 /*
  * Minimal errno definitions for NOLIBC
  * Copyright (C) 2017-2022 Willy Tarreau <w@1wt.eu>
- * Copyright (C) 2026 WaferJay
  */
 
 /* make sure to include all global symbols */
@@ -15,11 +14,7 @@
 
 #ifndef NOLIBC_IGNORE_ERRNO
 #define SET_ERRNO(v) do { errno = (v); } while (0)
-#ifdef NOLIBC_NO_BSS
-int errno __attribute__((weak,section(".data")));
-#else   // NOLIBC_NO_BSS
 int errno __attribute__((weak));
-#endif  // NOLIBC_NO_BSS
 #else
 #define SET_ERRNO(v) do { } while (0)
 #endif
