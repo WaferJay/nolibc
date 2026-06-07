@@ -2,6 +2,7 @@
 /*
  * Minimal errno definitions for NOLIBC
  * Copyright (C) 2017-2022 Willy Tarreau <w@1wt.eu>
+ * Copyright (C) 2026 WaferJay
  */
 
 /* make sure to include all global symbols */

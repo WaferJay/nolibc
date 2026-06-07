@@ -2,6 +2,7 @@
 /*
  * C Run Time support for NOLIBC
  * Copyright (C) 2023 Zhangjin Wu <falcon@tinylab.org>
+ * Copyright (C) 2026 WaferJay
  */
 
 #ifndef _NOLIBC_CRT_H
