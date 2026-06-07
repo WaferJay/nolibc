@@ -2,7 +2,6 @@
 /*
  * C Run Time support for NOLIBC
  * Copyright (C) 2023 Zhangjin Wu <falcon@tinylab.org>
- * Copyright (C) 2026 WaferJay
  */
 
 #ifndef _NOLIBC_CRT_H
@@ -10,13 +9,8 @@
 
 #include "compiler.h"
 
-#ifdef NOLIBC_NO_BSS
-char **environ __attribute__((weak,section(".data")));
-const unsigned long *_auxv __attribute__((weak,section(".data")));
-#else
 char **environ __attribute__((weak));
 const unsigned long *_auxv __attribute__((weak));
-#endif
 
 void _start(void);
 static void __stack_chk_init(void);
