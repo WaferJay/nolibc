@@ -28,3 +28,13 @@ int main()
     printf("hello, nolibc!\n");
 }
 ```
+
+## Licensing
+
+This project contains code derived from the Linux kernel.
+
+Unless otherwise specified, source files are licensed under:
+
+SPDX-License-Identifier: LGPL-2.1 OR MIT
+
+See LICENSES/ for full license texts.
